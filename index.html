@@ -1,22 +1,70 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodePine</title>
-    <style>
-        body { background: #0F172A; color: white; text-align: center; padding: 40px 20px; font-family: Arial; }
-        .logo { font-size: 100px; margin: 20px 0; }
-        h1 { color: #22C55E; font-size: 2em; }
-        p { color: #aaa; font-size: 1.1em; }
-        .btn { background: #22C55E; color: black; padding: 15px 40px; border: none; border-radius: 8px; font-size: 1.2em; font-weight: bold; cursor: pointer; margin-top: 30px; }
-        .btn:hover { background: #16A34A; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodePine</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body{
+      background: linear-gradient(135deg,#0F172A 0%,#0b1225 100%);
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      color: #fff;
+      text-align: center;
+    }
+    .card{ width: 100%; max-width: 420px; }
+    .logo{ font-size: 92px; line-height: 1; margin-bottom: 16px; }
+    h1{ color: #22C55E; font-size: 44px; margin-bottom: 10px; font-weight: 800; }
+    .sub{ color: #94A3B8; font-size: 18px; margin-bottom: 22px; }
+    .btn{
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      background: #22C55E;
+      color: #0F172A;
+      border-radius: 12px;
+      padding: 16px 18px;
+      font-size: 20px;
+      font-weight: 800;
+      margin-top: 12px;
+    }
+    .btn.secondary{
+      background: transparent;
+      color: #22C55E;
+      border: 2px solid #22C55E;
+    }
+    .note{
+      margin-top: 16px;
+      color: #94A3B8;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
+  <div class="card">
     <div class="logo">👁️</div>
     <h1>CodePine</h1>
-    <p>تطبيق رقابة أبوية ذكي</p>
-    <button class="btn" onclick="window.open('https://drive.google.com/drive/folders/1cur28eyX1bGD5lgzXG4qIHl-tNWoR9La')">📥 تحميل APK</button>
+    <div class="sub">تطبيق رقابة أبوية ذكي</div>
+
+    <!-- تحميل مباشر -->
+    <a class="btn" href="https://drive.google.com/uc?export=download&id=1pVZgs3-pq7Qm26YFaPGIN2LiOpVNyUpc">
+      تحميل APK مباشر
+    </a>
+
+    <!-- حل بديل داخل Messenger -->
+    <a class="btn secondary" href="https://drive.google.com/file/d/1pVZgs3-pq7Qm26YFaPGIN2LiOpVNyUpc/view?usp=drivesdk">
+      إذا طلع صفحة بيضا: افتح في Google Drive
+    </a>
+
+    <div class="note">
+      إذا كنت داخل Messenger/WhatsApp وما بداش التحميل: افتح الرابط في Chrome (Open in browser). 
+    </div>
+  </div>
 </body>
 </html>
